@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Currency Converter</title>
+    <meta charset="UTF-8">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Set CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Set Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+
+<body>
+    <div id="currency-box" class="currency-box">
+        <h1>Currency Converter</h1>
+        <input id="amount" type="number" placeholder="Amount">
+        <select id="from-currency" class="from-currency">
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="SAR">SAR</option>
+            <option value="EGP">EGP</option>
+            <option value="JOD">JOD</option>
+        </select>
+        <select id="to-currency" class="to-currency">
+            <option value="EGP">EGP</option>
+            <option value="SAR">SAR</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="JOD">JOD</option>
+        </select>
+        <input id="convert" type="button" value="Convert">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
