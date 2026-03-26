@@ -16,7 +16,7 @@ async function getCurrency() {
 // Convert Currency 
 async function convertCurrency() {
     let curr = await getCurrency();
-    if (isNaN(amount.value)) {
+    if (!isNaN(amount.value)) {
         let rate = toCurrency.value;
         let result = (amount.value * curr[rate]).toFixed(2);
         resultField.textContent = `${fromCurrency.value} TO ${rate} = ${result}`;
